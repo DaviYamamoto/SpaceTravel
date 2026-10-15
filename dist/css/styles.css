@@ -41,6 +41,7 @@
     --default-mono-font-family: var(--font-mono);
     --font-title: "Orbitron", sans-serif;
     --font-body: "Poppins", sans-serif;
+    --animate-corTexto: mudaCor 20s infinite;
   }
 }
 @layer base {
@@ -240,6 +241,9 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .animate-corTexto {
+    animation: var(--animate-corTexto);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -578,6 +582,23 @@
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes mudaCor {
+  0% {
+    color: rgb(255, 0, 0);
+  }
+  25% {
+    color: rgb(0, 255, 0);
+  }
+  50% {
+    color: rgb(0, 0, 225);
+  }
+  75% {
+    color: rgb(255, 0, 255);
+  }
+  100% {
+    color: rgb(255, 255, 0);
   }
 }
 @layer properties {
