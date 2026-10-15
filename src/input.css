@@ -17,4 +17,10 @@
     --color-rock-800: #591ab7;
     --color-rock-900: #4c189a;
     --color-rock-950: #2e0c69;
+
+    --spacing-my-50: 50px;
+}
+
+.astro-1esb {
+    @apply size-10 rounded-full border-2 border-cyan-950 object-cover cursor-pointer hover:animate-spin duration-500
 }
